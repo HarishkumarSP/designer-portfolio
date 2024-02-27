@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { SITEMAP } from './routes';
 import Home from './pages/Home';
@@ -10,6 +11,14 @@ import NotFound from './pages/NotFound';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    // Check if the user is on a mobile device
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      // Show the popup
+      alert('Uh oh! Currently Mobile/Tablet view is not fully supported');
+    }
+  }, []);
+
   return (
     <Layout>
       <Routes>

@@ -5,7 +5,7 @@ import { Config } from '../config';
 
 const Home = () => {
   return (
-    <div className="home grid grid-cols-[60%,40%] h-screen gap-5 mx-44 items-center">
+    <div className="home grid grid-cols-[60%,40%]  sm:mx-auto h-screen gap-5 mx-44 items-center">
       <div className="home-content text-justify ">
         <h1 className="text-[#FF686B]">
           <span className="text-5xl font-normal"> Hi There,</span>{' '}
@@ -29,7 +29,7 @@ const Home = () => {
           <Resume />
         </div>
       </div>
-      <div className="home-animate-image flex">
+      <div className="home-animate-image flex sm:hidden">
         <div className="absolute bottom-40">
           <img src="/assets/home-animate-man.png" alt="animate-man" />
         </div>

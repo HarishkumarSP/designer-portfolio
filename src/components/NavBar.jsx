@@ -39,10 +39,10 @@ const NavBar = () => {
           <header className="text-[#FF686B] font-bold text-2xl">
             <Link to={SITEMAP.home}>{Config.DESIGNER_NAME}</Link>
           </header>
-          <div className="ml-24">
+          <div className="ml-24 sm:hidden">
             <Logo />
           </div>
-          <div className="flex gap-12 text-base font-bold">
+          <div className="flex gap-12 text-base font-bold sm:hidden">
             {routesLinks.map((route) => (
               <NavLink
                 className={({ isActive }) =>
