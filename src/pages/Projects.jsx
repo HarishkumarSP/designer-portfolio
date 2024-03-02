@@ -23,7 +23,7 @@ const Projects = () => {
   ];
   return (
     <div className="project-container grid justify-center">
-      <div className="project-title-contents grid gap-5 text-[#FF686B] my-5">
+      <div className="project-title-contents grid gap-5 text-[#FF686B] my-24">
         <h1 className="text-5xl">UI/UX Designer</h1>
         <p>
           Hi, I&apos;m {Config.DESIGNER_SHORT_NAME}, Here are a few pieces of my

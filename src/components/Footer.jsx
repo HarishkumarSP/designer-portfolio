@@ -5,14 +5,14 @@ const Footer = () => {
   return (
     <footer className="grid gap-5">
       <SocialIcons />
-      <text className="text-2xl underline text-[#FF686B]">
+      <p className="text-2xl underline text-[#FF686B]">
         Contact us Email :{' '}
         <a
           href={`mailto:${Config.DESIGNER_EMAIL}?subject=Contacting Designer ${Config.DESIGNER_NAME}`}
         >
           {Config.DESIGNER_EMAIL}
         </a>
-      </text>
+      </p>
       <div className="developer-info text-gray-500">
         Made with &#10084; by{' '}
         <a

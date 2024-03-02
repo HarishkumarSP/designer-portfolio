@@ -1,4 +1,5 @@
 import Resume from '../components/shared/Resume';
+import TextTypingAnimation from '../components/shared/TextTypingAnimation';
 import { Config } from '../config';
 
 const About = () => {
@@ -22,7 +23,10 @@ const About = () => {
       </div>
       <div className="about-me-contents text-start grid text-lg gap-12 my-10">
         <h2 className="text-5xl text-[#FF686B]">
-          Hello, I&apos;m {Config.DESIGNER_SHORT_NAME}:)
+          <TextTypingAnimation
+            className="block h-[3.5rem]"
+            texts={[` Hello, I'm ${Config.DESIGNER_SHORT_NAME}:)`]}
+          />
         </h2>
         <div className="about-description grid gap-5">
           <p className="w-[504px]">

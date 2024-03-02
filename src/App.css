@@ -17,3 +17,7 @@
   height: auto;
   animation: bounce 2s infinite;
 }
+
+.custom-drop-shadow {
+  filter: drop-shadow(5px 6px 2px #00000040);
+}
