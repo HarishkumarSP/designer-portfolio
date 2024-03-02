@@ -6,7 +6,7 @@ import Image from '../components/shared/Image';
 
 const Home = () => {
   return (
-    <div className="home grid grid-cols-[60%,40%] sm:flex  sm:mx-auto h-screen gap-5 mx-44 items-center">
+    <div className="home grid grid-cols-[60%,40%] sm:flex  sm:mx-auto h-screen gap-5 ml-20 items-center">
       <div className="home-content text-justify ">
         <h1 className="text-[#FF686B]">
           <span className="text-5xl sm:text-3xl font-normal"> Hi There,</span>{' '}
@@ -32,7 +32,7 @@ const Home = () => {
           <Resume />
         </div>
       </div>
-      <div className="home-animate-image max-w-fit absolute sm:hidden left-[41rem]">
+      <div className="home-animate-image max-w-fit absolute sm:hidden left-[45rem]">
         <Image src="/assets/home-animate-man.gif" alt="animate-man" />
       </div>
     </div>
